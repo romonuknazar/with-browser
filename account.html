@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imitator</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/browser.css">
+  <script src="browser.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="account.js" defer></script>
+</head>
+
+<body>
+  <div class="browser">
+    <div class="info-bar">
+      <p class="time" id="time">10:00</p>
+      <div class="info-bar-block-icons">
+        <div class="info-bar-icons ibi-signal">
+          <img src="img/info-bar-signal.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-wifi">
+          <img src="img/info-bar-wifi.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-batery">
+          <img src="img/info-bar-battery.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="link-bar">
+      <div class="link-bar-home">
+        <img src="img/link-bar-home.svg" alt="">
+      </div>
+      <div class="link-bar-wrapper">
+        <div class="link-bar-wrapper-lock">
+          <img src="img/link-bar-lock.svg" alt="">
+        </div>
+        <!-- <p class="link-bar-wrapper-text">www.examle.com</p> -->
+        <input type="text" class="link-bar-wrapper-text" value="https://myaccount.uscis.gov">
+      </div>
+      <div class="link-bar-tab">
+        <img src="img/link-bar-tab-empty.svg" alt="">
+        <div class="link-bar-tab-block">
+          <p class="link-bar-tab-text">7</p>
+        </div>
+      </div>
+      <div class="link-bar-burger">
+        <img src="img/link-bar-burger.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="browser-margin"></div>
+  <header class="header" id="header" style="background: #F9F9F9;">
+    <div class="header-wrapper container">
+      <div class="promo">
+        <div class="flag"></div>
+        <p>An official website of the United States government</p>
+      </div>
+      <div class="about">
+        <a href="">Here’s how you know </a>
+        <span><img src="img/arrow.png" alt=""></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu">
+    <div class="menu-wrapper container">
+      <div class="menu-logo">
+        <img src="img/footer-logo-text.svg" alt="">
+      </div>
+      <div class="menu-burger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+        <span class="hamburger-text">Menu</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="baner">
+    <div class="baner-wrapper container">
+      <div class="avatar">
+        <h4 id="initial"></h4>
+      </div>
+      <p id="clientName"></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="casetitle">Your Cases</h2>
+    <div class="information-block">
+      <div class="case">
+        <div class="logo">
+          <img src="img/i.png" alt="">
+        </div>
+        <p class="case-text">Case closed</p>
+      </div>
+
+      <h3 class="declaration-title">I-134 Declaration of Financial Support</h3>
+
+      <div class="declaration">
+        <div class="declaration-block declaration-block-right">
+          <b>Submitted on</b>
+          <span id="submitdate">December 11, 2022</span>
+        </div>
+        <div class="declaration-block">
+          <b>Receipt # </b>
+          <span id="receiptId">IOE9145323768</span>
+        </div>
+      </div>
+
+      <div class="alert">
+        <p class="alert-text">
+          You received an update from U.S. Customs and Border Protection (CBP) about your travel authorization decision.
+          Please check the “Notices” tab to view the travel authorization decision.
+        </p>
+      </div>
+
+      <p class="update-text">Update on travel authorization decision and requirements after arriving in the U.S.</p>
+      <p class="desription-text">Check your “Notices” tab to view your travel authorization decision from CBP. If you
+        have travel group members, their travel authorization decisions may not be available yet. Please continue to
+        check your account for their travel authorization decisions.</p>
+      <p class="desription-text">After you arrive in the United States and are granted parole, you must complete a
+        tuberculosis attestation for yourself and each of your travel group members.</p>
+
+      <ul class="select-list">
+        <label for="sectionSelect">Sections</label>
+        <select id="sectionSelect">
+          <option value="yoursteps">Your Steps</option>
+          <option value="Travel Group Members">Travel Group Members</option>
+          <option value="casestatus">Case Status</option>
+          <option value="notices">Notices</option>
+        </select>
+      </ul>
+
+      <div class="tab tab-yoursteps" id="yoursteps">
+        <p>Once you arrive in the United States, you will no longer be able to add travel group members. You will
+          receive additional information, including travel authorization notices, in your account for any travel group
+          members.</p>
+        <a href="">View your biographic information</a>
+        <div class="tab-yoursteps-wrapper">
+          <p>Steps</p>
+          <a href="">Tuberculosis attestation (after arriving in the U.S.)</a>
+          <button>Submit to CBP</button>
+        </div>
+      </div>
+
+      <div class="tab tab-notices" id="notices" hidden>
+        <h3>USCIS Notices</h3>
+        <div class="tab-notices-header">Notices <span id="rowsNumber">(3 of 3)</span>
+        </div>
+
+        <div class="notices-list-item">
+          <p>Travel Authorization Document.pdf</p>
+          <div class="notices-list-item-details" hidden>
+            <p>Notice</p>
+            <a href="pdf.html?source=link1">Travel Authorization Document.pdf</a>
+            <p>Date sent</p>
+            <span class="data-sent">December 21, 2022</span>
+          </div>
+        </div>
+
+        <div class="notices-list-item">
+          <p>Confirmation Notice.pdf</p>
+          <div class="notices-list-item-details" hidden>
+            <p>Notice</p>
+            <a href="">Confirmation Notice.pdf</a>
+            <p>Date sent</p>
+            <span class="data-sent">December 21, 2022</span>
+          </div>
+        </div>
+
+        <div class="notices-list-item">
+          <p>Account Acceptance Notice.pdf</p>
+          <div class="notices-list-item-details" hidden>
+            <p>Notice</p>
+            <a href="">Account Acceptance Notice.pdf</a>
+            <p>Date sent</p>
+            <span class="data-sent">December 21, 2022</span>
+          </div>
+        </div>
+
+        <div class="notices-list-item" hidden>
+          <p>Travel Authorization Document.pdf</p>
+          <div class="notices-list-item-details" hidden>
+            <p>Notice</p>
+            <a href="pdf.html?source=link2">Travel Authorization Document.pdf</a>
+            <p>Date sent</p>
+            <span class="data-sent">December 21, 2022</span>
+          </div>
+        </div>
+
+        <div class="notices-list-item" hidden>
+          <p>Confirmation Notice.pdf</p>
+          <div class="notices-list-item-details" hidden>
+            <p>Notice</p>
+            <a href="">Confirmation Notice.pdf</a>
+            <p>Date sent</p>
+            <span class="data-sent">December 21, 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="return" style="background-color: #f9f9f9;">
+      <a href="index.html">Return to top</a>
+    </div>
+  </div>
+
+  <div class="footer-programs">
+    <ul class="footer-programs-list">
+      <li class="footer-programs-list-item">
+        <a href="">Topics</a>
+      </li>
+      <li class="footer-programs-list-item">
+        <a href="">Citizenship</a>
+      </li>
+      <li class="footer-programs-list-item">
+        <a href="">Schedule an Appointment</a>
+      </li>
+      <li class="footer-programs-list-item">
+        <a href="">Find a Doctor</a>
+      </li>
+      <li class="footer-programs-list-item">
+        <a href="">Find a Class</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-social">
+    <div class="footer-social-logo">
+      <img src="img/footer-logo-text.svg" alt="">
+    </div>
+    <div class="footer-social-contacts">
+      <ul class="footer-social-list">
+        <li class="footer-social-item"><a href=""></a></li>
+        <li class="footer-social-item"><a href=""></a></li>
+        <li class="footer-social-item"><a href=""></a></li>
+        <li class="footer-social-item"><a href=""></a></li>
+        <li class="footer-social-item"><a href=""></a></li>
+        <li class="footer-social-item"><a href=""></a></li>
+      </ul>
+      <div class="footer-social-contact">
+        <a href="" class="footer-social-contact-link">Contact USCIS</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imitator</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/browser.css">
+  <link rel="stylesheet" href="css/pdf.css">
+  <script src="browser.js" defer></script>
+  <script src="pdf.js" defer></script>
+</head>
+
+<body>
+  <div class="browser">
+    <div class="info-bar">
+      <p class="time" id="time">10:00</p>
+      <div class="info-bar-block-icons">
+        <div class="info-bar-icons ibi-signal">
+          <img src="img/info-bar-signal.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-wifi">
+          <img src="img/info-bar-wifi.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-batery">
+          <img src="img/info-bar-battery.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="link-bar">
+      <div class="link-bar-home">
+        <img src="img/link-bar-home.svg" alt="">
+      </div>
+      <div class="link-bar-wrapper-pdf">
+        <p class="link-bar-wrapper-pdf-text">Travel Authorization Document.pdf</p>
+      </div>
+      <div class="link-bar-burger">
+        <img src="img/link-bar-burger.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="browser-margin"></div>
+  <main>
+    <div class="pdf-container">
+      <div class="logo"><img src="img/logo.jpg" alt=""></div>
+      <h1>TRAVEL AUTHORIZED</h1>
+      <p class="text">Your travel authorization has been approved and you are now authorized to travel to the United
+        States under the Uniting for
+        Ukraine (U4U) process to seek parole. You must meet all requirements for boarding an aircraft. This document
+        does not grant
+        you parole. Upon arrival to the United States, a U.S. Customs and Border Protection (CBP) officer will make the
+        determination
+        on parole once you arrive at a port of entry. </p>
+
+      <p class="text">You are responsible for arranging your own travel to the United States. You are highly encouraged
+        to travel to the United
+        States via air. Please be prepared to show this status page to airline personnel along with your passport and
+        other appropriate
+        identification. If you are traveling with a child under 18 years old, you should be prepared to provide proof
+        that the child is
+        traveling with a parent or legal guardian. For their protection, children who are not accompanied by a parent or
+        legal guardian
+        may be placed in the custody of the Department of Health and Human Services (HHS).</p>
+
+      <p class="info-name">Name:<span id="fullname">TYMOSHENKO, MILANA NMN</span></p>
+
+      <ul class="table-list">
+        <li class="table-list-item">
+          <p>Date of Birth</p>
+          <span id="dateofbirth">Nov 20, 2015</span>
+        </li>
+        <li class="table-list-item">
+          <p>Alien Number</p>
+          <span id="aliennumber">232081057</span>
+        </li>
+        <li class="table-list-item">
+          <p>Passport Number</p>
+          <span id="passnumber">GA518182</span>
+        </li>
+        <li class="table-list-item">
+          <p>Status</p>
+          <span>Authorization Approved</span>
+        </li>
+        <li class="table-list-item">
+          <p>Expiration Date</p>
+          <span id="expdate">Mar 21, 2023</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
