@@ -50,13 +50,13 @@ function addUser() {
   user.firstdoc.datebirth = admin.fdatebirth.value
   user.firstdoc.aliennum = admin.faliennum.value
   user.firstdoc.pasnum = admin.fpasnum.value
-  user.firstdoc.expdate = admin.fname.value
+  user.firstdoc.expdate = admin.fexpdate.value
 
   user.seconddoc.name = admin.sname.value
   user.seconddoc.datebirth = admin.sdatebirth.value
   user.seconddoc.aliennum = admin.saliennum.value
   user.seconddoc.pasnum = admin.spasnum.value
-  user.seconddoc.expdate = admin.sname.value
+  user.seconddoc.expdate = admin.sexpdate.value
 
   users.push(user)
 
